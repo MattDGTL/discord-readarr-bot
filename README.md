@@ -54,6 +54,25 @@ This Discord bot allows users to search for books using the Open Library API and
 3.  The bot will respond with a dropdown menu of search results. Select a book to view its details.
 4.  Click the "Add to Readarr" button to add the book to your Readarr instance.
 
+## Docker Usage
+
+Alternatively, you can run the bot using Docker.
+
+1.  **Prerequisites:**
+    *   Docker and Docker Compose must be installed.
+
+2.  **Build and Run:**
+    *   Make sure you have a correctly configured `.env` file in the root directory (as described in the Installation section).
+    *   Run the following command to build and start the bot in the background:
+        ```bash
+        docker-compose up --build -d
+        ```
+
+3.  **Stopping the bot:**
+    ```bash
+    docker-compose down
+    ```
+
 ## How it Works
 
 The bot uses the following libraries:
