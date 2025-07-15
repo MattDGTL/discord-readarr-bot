@@ -2,6 +2,10 @@
 
 This Discord bot allows users to search for books using the Open Library API and add them to a Readarr instance.
 
+<p align="center">
+  <img src="narr8.png" alt="narr8.png">
+</p>
+
 ## Features
 
 -   Search for books by title or author.
