@@ -9,6 +9,13 @@ const {
   StringSelectMenuBuilder,
   ComponentType,
 } = require('discord.js');
+
+if (!process.env.DISCORD_TOKEN) {
+  console.error('DISCORD_TOKEN is not set in the .env file!');
+  process.exit(1); // Exit with an error code
+} else {
+  console.log('DISCORD_TOKEN is set. Attempting to log in...');
+}
 const { searchBooks } = require('./open-library');
 const { addBook } = require('./readarr');
 
